@@ -1,0 +1,25 @@
+.vp-hero-image {
+    max-width: 300px !important; 
+    height: auto;
+  }
+
+  .vp-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+  } 
+
+
+  // === colors ===
+:root {
+  // accent colors
+  --vp-c-accent: #3a79f8;
+  --vp-c-accent-bg: #3a79f8;
+  --vp-c-accent-hover: #ff6600;
+  --vp-c-accent-text: var(--vp-c-white);
+  --vp-c-accent-soft: rgb(16 185 129 / 14%);
+
+}
