@@ -1,5 +1,9 @@
 <template><div><h1 id="sms-account-balance" tabindex="-1"><a class="header-anchor" href="#sms-account-balance"><span>SMS ACCOUNT BALANCE</span></a></h1>
 <p>The <strong>SMS Account Balance</strong> API allows you to check the available balance in your SMS account. This ensures that you have sufficient credits before sending messages.</p>
+<div class="hint-container tip">
+<p class="hint-container-title">Tip</p>
+<p>Checkout code examples in send SMS</p>
+</div>
 <h2 id="get-method" tabindex="-1"><a class="header-anchor" href="#get-method"><span>GET Method</span></a></h2>
 <p><strong>Endpoint:</strong></p>
 <p><code v-pre>https://{{url}}/api/services/getbalance</code></p>

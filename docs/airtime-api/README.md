@@ -90,3 +90,73 @@ Every request to the API must include the following headers:
 - Maximum amount is KES 10,000
 - Minimum amount is KES 10
 
+**Code Examples (POST Request)**
+::: code-tabs
+
+@tab PHP
+```php
+
+<?php
+$payload = json_encode([
+    "recipients" => [
+        [
+            "recipient" => "2547XXXXXX",
+            "amount" => 100
+        ],
+        [
+            "recipient" => "2547XXXXXX",
+            "amount" => 100
+        ]
+    ]
+]);
+
+$curl = curl_init();
+curl_setopt_array($curl, [
+    CURLOPT_URL => "https://{{url}}/api/endpoint",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => $payload,
+    CURLOPT_HTTPHEADER => ["Content-Type: application/json"]
+]);
+
+$response = curl_exec($curl);
+curl_close($curl);
+echo $response;
+?>
+```
+@tab Node.js
+```javascript
+const axios = require('axios');
+
+const data = {
+    recipients: [
+        { recipient: "2547XXXXXX", amount: 100 },
+        { recipient: "2547XXXXXX", amount: 100 }
+    ]
+};
+
+axios.post("https://{{url}}/api/endpoint", data, {
+    headers: { "Content-Type": "application/json" }
+})
+.then(response => console.log(response.data))
+.catch(error => console.error(error));
+
+```
+
+@tab Python
+```python
+import requests
+
+url = "https://{{url}}/api/endpoint"
+headers = {"Content-Type": "application/json"}
+payload = {
+    "recipients": [
+        {"recipient": "2547XXXXXX", "amount": 100},
+        {"recipient": "2547XXXXXX", "amount": 100}
+    ]
+}
+
+response = requests.post(url, json=payload, headers=headers)
+print(response.json())
+
+```

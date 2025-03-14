@@ -82,3 +82,121 @@ The partnerID, apikey, and shortcode should be the same for all JSON objects wit
     "response-description":"Invalid credentials"
 }
 ```
+
+**Code Examples (POST Request)**
+
+::: code-tabs
+@tab PHP
+
+```php
+<?php
+$payload = json_encode([
+    "count" => {{count}},
+    "smslist" => [
+        [
+            "partnerID" => "{{partnerID}}",
+            "apikey" => "{{apikey}}",
+            "pass_type" => "plain",
+            "clientsmsid" => {{clientsmsid1}},
+            "mobile" => "{{mobile1}}",
+            "message" => "{{message1}}",
+            "shortcode" => "{{shortcode}}"
+        ],
+        [
+            "partnerID" => "{{partnerID}}",
+            "apikey" => "{{apikey}}",
+            "pass_type" => "plain",
+            "mobile" => "{{mobile2}}",
+            "clientsmsid" => {{clientsmsid2}},
+            "message" => "{{message2}}",
+            "shortcode" => "{{shortcode}}",
+            "pass_type" => "{{pass_type}}"
+        ]
+    ]
+]);
+
+$curl = curl_init();
+curl_setopt_array($curl, [
+    CURLOPT_URL => "https://{{url}}/api/services/sendbulk",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => $payload,
+    CURLOPT_HTTPHEADER => ['Content-Type: application/json']
+]);
+$response = curl_exec($curl);
+curl_close($curl);
+echo $response;
+?>
+```
+
+@tab Node.js
+```javascript
+const axios = require('axios');
+
+const payload = {
+    count: {{count}},
+    smslist: [
+        {
+            partnerID: "{{partnerID}}",
+            apikey: "{{apikey}}",
+            pass_type: "plain",
+            clientsmsid: {{clientsmsid1}},
+            mobile: "{{mobile1}}",
+            message: "{{message1}}",
+            shortcode: "{{shortcode}}"
+        },
+        {
+            partnerID: "{{partnerID}}",
+            apikey: "{{apikey}}",
+            pass_type: "plain",
+            mobile: "{{mobile2}}",
+            clientsmsid: {{clientsmsid2}},
+            message: "{{message2}}",
+            shortcode: "{{shortcode}}",
+            pass_type: "{{pass_type}}"
+        }
+    ]
+};
+
+axios.post('https://{{url}}/api/services/sendbulk', payload, {
+    headers: { 'Content-Type': 'application/json' }
+})
+.then(response => console.log(response.data))
+.catch(error => console.error(error));
+```
+@tab Python
+```python
+import requests
+
+url = "https://{{url}}/api/services/sendbulk"
+payload = {
+    "count": {{count}},
+    "smslist": [
+        {
+            "partnerID": "{{partnerID}}",
+            "apikey": "{{apikey}}",
+            "pass_type": "plain",
+            "clientsmsid": {{clientsmsid1}},
+            "mobile": "{{mobile1}}",
+            "message": "{{message1}}",
+            "shortcode": "{{shortcode}}"
+        },
+        {
+            "partnerID": "{{partnerID}}",
+            "apikey": "{{apikey}}",
+            "pass_type": "plain",
+            "mobile": "{{mobile2}}",
+            "clientsmsid": {{clientsmsid2}},
+            "message": "{{message2}}",
+            "shortcode": "{{shortcode}}",
+            "pass_type": "{{pass_type}}"
+        }
+    ]
+}
+
+headers = {"Content-Type": "application/json"}
+response = requests.post(url, json=payload, headers=headers)
+print(response.text)
+```
+
+:::

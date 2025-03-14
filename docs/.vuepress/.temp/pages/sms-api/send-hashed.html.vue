@@ -5,6 +5,10 @@
 <p>This endpoint is strictly for sending transactional messages only.We do not allow promotional content on hashed numbers.The hashing mechanism was introduced to ensure compliance with regulatory requirements.</p>
 <p>Any misuse of this endpoint for promotional messaging will result in strict measures, including potential suspension or blacklisting.Ensure all messages sent comply with guidelines.</p>
 </div>
+<div class="hint-container tip">
+<p class="hint-container-title">Tip</p>
+<p>Checkout code examples in send SMS</p>
+</div>
 <h2 id="post-method" tabindex="-1"><a class="header-anchor" href="#post-method"><span>POST Method</span></a></h2>
 <p><strong>Endpoint:</strong></p>
 <p><code v-pre>https://{{url}}/api/services/sendotp</code></p>

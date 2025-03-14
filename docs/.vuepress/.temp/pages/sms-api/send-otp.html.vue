@@ -6,6 +6,10 @@
 <p>This endpoint is strictly for sending <strong>OTP and transactional messages</strong> only.<br>
 Any misuse, such as sending promotional or unsolicited messages, is a violation of policy and may result in access restrictions or penalties.</p>
 </div>
+<div class="hint-container tip">
+<p class="hint-container-title">Tip</p>
+<p>Checkout code examples in send SMS</p>
+</div>
 <h2 id="get-method" tabindex="-1"><a class="header-anchor" href="#get-method"><span>GET Method</span></a></h2>
 <p><strong>Endpoint:</strong></p>
 <p><code v-pre>https://{{url}}/api/services/sendotp</code></p>

@@ -4,6 +4,10 @@
 <p class="hint-container-title">Tip</p>
 <p>Instead of periodically fetching delivery reports, you can configure an endpoint on your account to receive delivery reports in real-time. This ensures that message statuses are automatically updated without the need for manual requests.See below</p>
 </div>
+<div class="hint-container tip">
+<p class="hint-container-title">Tip</p>
+<p>Checkout code examples in send SMS</p>
+</div>
 <h2 id="get-method" tabindex="-1"><a class="header-anchor" href="#get-method"><span>GET Method</span></a></h2>
 <p><strong>Endpoint:</strong></p>
 <p><code v-pre>https://{{url}}/api/services/getdlr</code></p>
@@ -73,6 +77,17 @@
 <p class="hint-container-title">Info</p>
 <p>Once configured, delivery reports will be automatically posted to your specified Callback URL, eliminating the need for manual requests.</p>
 </div>
-</div></template>
+<h3 id="sample-callback-payload" tabindex="-1"><a class="header-anchor" href="#sample-callback-payload"><span><strong>Sample Callback Payload</strong></span></a></h3>
+<p>When an SMS delivery report is available, we will send a request to your configured callback URL with the following payload:</p>
+<div class="language-json line-numbers-mode" data-highlighter="prismjs" data-ext="json"><pre v-pre><code><span class="line"><span class="token punctuation">{</span></span>
+<span class="line">  <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"DeliveredToTerminal"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"messageid"</span><span class="token operator">:</span> <span class="token string">"1889191"</span><span class="token punctuation">,</span></span>
+<span class="line">  <span class="token property">"timeTaken"</span><span class="token operator">:</span> <span class="token string">"22s"</span><span class="token punctuation">,</span> <span class="token comment">//The turn around time for message delivery</span></span>
+<span class="line">  <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token string">"2025-09-12 10:16:10"</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

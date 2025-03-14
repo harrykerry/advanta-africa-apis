@@ -49,6 +49,11 @@ export default defineUserConfig({
             children: [],
           },
           {
+            text: "Delivery Status Descriptions",
+            link: "delivery-status.md",
+            children: [],
+          },
+          {
             text: "SMS Balance",
             link: "balance.md",
             children: [],
@@ -78,6 +83,12 @@ export default defineUserConfig({
         text: "USSD GUIDE",
         prefix: "/ussd-api/",
         link: "/ussd-api/",
+        children: [],
+      },
+      {
+        text: "SHORTCODE GUIDE",
+        prefix: "/shortcode-api/",
+        link: "/shortcode-api/",
         children: [],
       },
 

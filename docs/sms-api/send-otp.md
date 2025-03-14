@@ -13,6 +13,10 @@ This endpoint is strictly for sending <strong>OTP and transactional messages</st
  Any misuse, such as sending promotional or unsolicited messages, is a violation of policy and may result in access restrictions or penalties.
 :::
 
+::: tip Tip
+Checkout code examples in send SMS
+:::
+
 ## GET Method
 
 **Endpoint:**

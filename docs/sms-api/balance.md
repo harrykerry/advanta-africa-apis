@@ -2,10 +2,14 @@
 title: SMS ACCOUNT BALANCE
 ---
 
-
 # SMS ACCOUNT BALANCE
 
 The **SMS Account Balance** API allows you to check the available balance in your SMS account. This ensures that you have sufficient credits before sending messages.
+
+::: tip Tip
+Checkout code examples in send SMS
+:::
+
 
 
 ## GET Method

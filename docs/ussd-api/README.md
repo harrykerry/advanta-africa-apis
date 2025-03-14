@@ -4,7 +4,11 @@ title: USSD GUIDE
 
 # USSD GUIDE
 
-The **USSD Guide** provides instructions for setting up an endpoint that we will configure on the client's USSD code. Clients must first acquire either a **dedicated** or **shared** USSD code from us before proceeding with the setup.
+The **USSD Guide** provides instructions for setting up an endpoint that we will configure on the client's USSD code. 
+
+::: info
+Clients must first acquire either a **dedicated** or **shared** USSD code from us before proceeding with the setup.
+:::
 
 
 ## Setting Up Your USSD Endpoint

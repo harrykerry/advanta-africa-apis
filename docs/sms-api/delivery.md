@@ -9,6 +9,10 @@ The **Delivery Reports (DLR)** API allows you to check the status of sent messag
 Instead of periodically fetching delivery reports, you can configure an endpoint on your account to receive delivery reports in real-time. This ensures that message statuses are automatically updated without the need for manual requests.See below
 :::
 
+::: tip Tip
+Checkout code examples in send SMS
+:::
+
 
 
 ## GET Method
@@ -78,5 +82,16 @@ Instead of periodically fetching delivery reports, you can configure an endpoint
 ::: info
 Once configured, delivery reports will be automatically posted to your specified Callback URL, eliminating the need for manual requests.
 :::
+
+### **Sample Callback Payload**  
+When an SMS delivery report is available, we will send a request to your configured callback URL with the following payload:  
+
+```json
+{
+  "description": "DeliveredToTerminal",
+  "messageid": "1889191",
+  "timeTaken": "22s", //The turn around time for message delivery
+  "timestamp": "2025-09-12 10:16:10"
+}
 
 

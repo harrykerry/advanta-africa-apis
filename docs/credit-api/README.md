@@ -57,3 +57,58 @@ The **Reseller Credit API** allows you to transfer SMS credits to your sub-accou
   "response-description": "The child acount is invalid. Kindly verify the details"
 }
 ```
+
+**Code Examples (POST Request)**
+::: code-tabs
+
+@tab PHP
+```php
+$ch = curl_init("https://{{url}}/api/endpoint");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode([
+    "apikey" => "{{apikey}}",
+    "partnerID" => "{{partnerID}}",
+    "childID" => "{{childID}}",
+    "amount" => "{{amount}}"
+]));
+
+$response = curl_exec($ch);
+curl_close($ch);
+echo $response;
+```
+@tab Node.js
+```javascript
+const axios = require('axios');
+
+const data = {
+    apikey: "{{apikey}}",
+    partnerID: "{{partnerID}}",
+    childID: "{{childID}}",
+    amount: "{{amount}}"
+};
+
+axios.post("https://{{url}}/api/endpoint", data, {
+    headers: { "Content-Type": "application/json" }
+})
+.then(response => console.log(response.data))
+.catch(error => console.error(error));
+```
+@tab Python
+```python
+import requests
+
+url = "https://{{url}}/api/endpoint"
+headers = {"Content-Type": "application/json"}
+payload = {
+    "apikey": "{{apikey}}",
+    "partnerID": "{{partnerID}}",
+    "childID": "{{childID}}",
+    "amount": "{{amount}}"
+}
+
+response = requests.post(url, json=payload, headers=headers)
+print(response.json())
+```
+

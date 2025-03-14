@@ -11,6 +11,10 @@ This endpoint is strictly for sending transactional messages only.We do not allo
 Any misuse of this endpoint for promotional messaging will result in strict measures, including potential suspension or blacklisting.Ensure all messages sent comply with guidelines.
 :::
 
+::: tip Tip
+Checkout code examples in send SMS
+:::
+
 
 
 ## POST Method

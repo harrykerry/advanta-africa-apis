@@ -1,5 +1,9 @@
 <template><div><h1 id="ussd-guide" tabindex="-1"><a class="header-anchor" href="#ussd-guide"><span>USSD GUIDE</span></a></h1>
-<p>The <strong>USSD Guide</strong> provides instructions for setting up an endpoint that we will configure on the client's USSD code. Clients must first acquire either a <strong>dedicated</strong> or <strong>shared</strong> USSD code from us before proceeding with the setup.</p>
+<p>The <strong>USSD Guide</strong> provides instructions for setting up an endpoint that we will configure on the client's USSD code.</p>
+<div class="hint-container info">
+<p class="hint-container-title">Info</p>
+<p>Clients must first acquire either a <strong>dedicated</strong> or <strong>shared</strong> USSD code from us before proceeding with the setup.</p>
+</div>
 <h2 id="setting-up-your-ussd-endpoint" tabindex="-1"><a class="header-anchor" href="#setting-up-your-ussd-endpoint"><span>Setting Up Your USSD Endpoint</span></a></h2>
 <p>Once you have a USSD code, you must provide us with a <strong>callback URL</strong> where we will forward incoming USSD requests. The callback URL should accept the following parameters:</p>
 <table>
