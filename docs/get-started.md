@@ -9,6 +9,12 @@ For any inquiries or challenges, contact **[tech@advantasms.com](mailto:tech@adv
 This documentation is continuously updated. We strive to provide the most accurate and up-to-date information.
 :::
 
+::: important
+The base URL is:
+
+**https://quicksms.advantasms.com**
+:::
+
 ::: tip Tip
 To use our APIs please acquire the service you are interested in first. Reach out to your account manager or contact **[info@advantasms.com](mailto:info@advantasms.com)**.
 :::
@@ -24,6 +30,7 @@ Explore the following APIs for seamless integration:
 - **[USSD GUIDE](./ussd-api/README.md)**    
 - **[SMPP GUIDE](./smpp-api/README.md)**  
 - **[AIRTIME API](./airtime-api/README.md)** 
+- **[EMAIL API](./email-api/README.md)** 
 - **More APIs coming soon**
 
 

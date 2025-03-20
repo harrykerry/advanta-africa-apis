@@ -5,7 +5,7 @@
 <h3 id="steps-to-obtain-api-credentials" tabindex="-1"><a class="header-anchor" href="#steps-to-obtain-api-credentials"><span>Steps to Obtain API Credentials:</span></a></h3>
 <ol>
 <li>Log in to your <strong>QuickSMS</strong> account.</li>
-<li>On the left-side menu, click on <strong>API Apps</strong>.</li>
+<li>On the left-side menu, click on <strong>Utility Apps</strong>.</li>
 <li>Create a new app or select an existing one.</li>
 <li>Click on <strong>Settings</strong>.</li>
 <li>Generate an <strong>APP_TOKEN</strong> and store it safely (it will only be displayed once).</li>

@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"en-US\",\"title\":\"Advanta API Documentation\",\"description\":\"Official API documentation for Advanta Africa, outlining integration guidelines and usage instructions.\",\"head\":[],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"en-US\",\"title\":\"Advanta Africa APIs\",\"description\":\"Official API documentation for Advanta Africa, outlining integration guidelines and usage instructions.\",\"head\":[],\"locales\":{}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

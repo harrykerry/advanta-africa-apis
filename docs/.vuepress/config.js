@@ -5,7 +5,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 export default defineUserConfig({
   lang: "en-US",
 
-  title: "Advanta API Documentation",
+  title: "Advanta Africa APIs",
   description:
     "Official API documentation for Advanta Africa, outlining integration guidelines and usage instructions.",
 
@@ -103,6 +103,13 @@ export default defineUserConfig({
         text: "AIRTIME API",
         prefix: "/airtime-api/",
         link: "/airtime-api/",
+        children: [],
+      },
+
+      {
+        text: "EMAIL API",
+        prefix: "/email-api/",
+        link: "/email-api/",
         children: [],
       },
     ],

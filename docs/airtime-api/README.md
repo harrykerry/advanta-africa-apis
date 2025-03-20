@@ -13,7 +13,7 @@ To interact with the application, you will need to acquire an **APP_KEY** and **
 ### Steps to Obtain API Credentials:
 
 1. Log in to your **QuickSMS** account.
-2. On the left-side menu, click on **API Apps**.
+2. On the left-side menu, click on **Utility Apps**.
 3. Create a new app or select an existing one.
 4. Click on **Settings**.
 5. Generate an **APP_TOKEN** and store it safely (it will only be displayed once).

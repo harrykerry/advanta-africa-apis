@@ -5,6 +5,11 @@
 <p class="hint-container-title">Important</p>
 <p>This documentation is continuously updated. We strive to provide the most accurate and up-to-date information.</p>
 </div>
+<div class="hint-container important">
+<p class="hint-container-title">Important</p>
+<p>The base URL is:</p>
+<p><strong>https://quicksms.advantasms.com</strong></p>
+</div>
 <div class="hint-container tip">
 <p class="hint-container-title">Tip</p>
 <p>To use our APIs please acquire the service you are interested in first. Reach out to your account manager or contact <strong><a href="mailto:info@advantasms.com" target="_blank" rel="noopener noreferrer">info@advantasms.com</a></strong>.</p>
@@ -17,6 +22,7 @@
 <li><strong><RouteLink to="/ussd-api/">USSD GUIDE</RouteLink></strong></li>
 <li><strong><RouteLink to="/smpp-api/">SMPP GUIDE</RouteLink></strong></li>
 <li><strong><RouteLink to="/airtime-api/">AIRTIME API</RouteLink></strong></li>
+<li><strong><RouteLink to="/email-api/">EMAIL API</RouteLink></strong></li>
 <li><strong>More APIs coming soon</strong></li>
 </ul>
 </div></template>
