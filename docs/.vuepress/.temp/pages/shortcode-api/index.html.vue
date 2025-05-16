@@ -51,8 +51,12 @@
 <td>The recipient's phone number.</td>
 </tr>
 <tr>
-<td><strong><code v-pre>partnerId</code></strong></td>
+<td><strong><code v-pre>message</code></strong></td>
 <td>The message content.</td>
+</tr>
+<tr>
+<td><strong><code v-pre>partnerId</code></strong></td>
+<td>The SMS Account Id .</td>
 </tr>
 <tr>
 <td><strong><code v-pre>Custom</code></strong></td>
