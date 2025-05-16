@@ -29,7 +29,8 @@ Once you have acquired a shortcode, you need to provide an endpoint that accepts
 | --------------- | --------------------------------------------------------------------------------------------- |
 | **`shortcode`** | The assigned shortcode.                                                                       |
 | **`msisdn`**    | The recipient's phone number.                                                                 |
-| **`partnerId`** | The message content.                                                                          |
+| **`message`** | The message content.                                                                          |
+| **`partnerId`** | The SMS Account Id .                                                                          |
 | **`Custom`**    | If required, share any extra details such as authentication keys or specific request headers. |
 
 ### **Sample Payload**
